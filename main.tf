@@ -15,7 +15,7 @@ resource "aws_instance" "practice01"{
     ami = "ami-01938df366ac2d954"
     instance_type = "t2.micro"
     availability_zone = "ap-southeast-1"
-        tags{
+        tags = {
             name = "terraform-practice01"
         }
 }
